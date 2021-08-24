@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-practic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "start:dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viktor2020arey/nodejs-practic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viktor2020arey/nodejs-practic/issues"
+  },
+  "homepage": "https://github.com/Viktor2020arey/nodejs-practic#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
