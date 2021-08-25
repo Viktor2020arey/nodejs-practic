@@ -19,24 +19,6 @@ program.parse(process.argv);
 (async () => {
   const argv = program.opts();
 
-  // (async () => {
-  //   try {
-  // const products = await listContacts();
-  // console.log(products);
-  // const id = 12;
-  // const oneProduct = await getContactById(id);
-  // console.log(oneProduct);
-  // const id = 9;
-  // const delContact = await removeContact(id);
-  // console.log(delContact);
-  // const newContact = await addContact("Mago", "mango@gmail.com", "322-22-22");
-  // console.log(newContact);
-  //   } catch (error) {
-  //     console.log(error.message);
-  //   }
-  // })();
-
-  // TODO: рефакторить
   const invokeAction = async ({ action, id, name, email, phone }) => {
     switch (action) {
       case "list":
@@ -60,8 +42,8 @@ program.parse(process.argv);
 
       case "remove":
         await removeContact(id);
-        const newContacts = await listContacts();
-        console.table(newContacts);
+        const newContactsAftRemove = await listContacts();
+        console.table(newContactsAftRemove);
 
         break;
 
